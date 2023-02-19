@@ -14,7 +14,7 @@
 -- @license GPL v3.0
 ---------------------------------------------------------------------------
 
-local util = require("async.internal.util")
+local util = require("external.async.src.async.internal.util")
 local pack = table.pack or function(...) return {...} end
 local unpack = table.unpack or unpack
 
