@@ -16,7 +16,7 @@
 
 local util = require("external.async.src.async.internal.util")
 local pack = table.pack or function(...) return {...} end
-local unpack = table.unpack or unpack
+local unpack = unpack or table.unpack -- luacheck: globals unpack (compatibility with Lua 5.1)
 
 local async = {}
 
